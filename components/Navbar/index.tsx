@@ -10,6 +10,10 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const whatsappLink =
   'https://wa.me/918383099920?text=I%20am%20looking%20for%20properties%20to%20rent%20or%20buy.';
 
+  type Menu = {
+  text: string;
+  path: string;
+};
 const menus: Menu[] = [
   {
     text: 'About us',
@@ -35,6 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({
     disableHysteresis: true,
     threshold: 80,
   });
+  
 
   const menus: Menu[] = [
     {
